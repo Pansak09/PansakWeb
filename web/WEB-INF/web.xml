@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>AddNewFoodServlet</servlet-name>
+        <servlet-class>AddNewFoodServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>getFoodDataService</servlet-name>
+        <servlet-class>services.getFoodDataService</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddNewFoodServlet1</servlet-name>
+        <servlet-class>AddNewFoodServlet1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddNewFoodServlet</servlet-name>
+        <url-pattern>/AddNewFoodServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>getFoodDataService</servlet-name>
+        <url-pattern>/getFoodDataService/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddNewFoodServlet1</servlet-name>
+        <url-pattern>/AddNewFoodServlet1</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink Information</title>
+</head>
+<body>
+    <h1>Drink Information</h1>
+    <form action="AddNewFoodServlet1" method="post">
+        <label for="foodname">Food Name:</label>
+        <input type="text" id="foodname" name="foodname" required><br><br>
+
+        <label for="type">Type:</label>
+        <select id="type" name="type" required>
+            <option value="Mix">Mix</option>
+            <option value="Not Mix">Not Mix</option>
+        </select><br><br>
+
+        <div class="topping">
+            <label>Topping:</label><br>
+            <input type="checkbox" id="Bubble" name="topping" value="Bubble"> Bubble<br>
+            <input type="checkbox" id="FruitSalad" name="topping" value="Fruit Salad"> Fruit Salad<br>
+            <input type="checkbox" id="Ovaltine" name="topping" value="Ovaltine"> Ovaltine<br>
+            <input type="checkbox" id="Oreo" name="topping" value="Oreo"> Oreo<br>
+        </div>
+
+        <div class="taste-group">
+            <label>Taste:</label><br>
+            <input type="radio" id="verySweet" name="taste" value="Very Sweet"> Very Sweet<br>
+            <input type="radio" id="littleSweet" name="taste" value="Little Sweet"> Little Sweet<br>
+            <input type="radio" id="notSweet" name="taste" value="Not Sweet"> Not Sweet<br>
+        </div>
+
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
